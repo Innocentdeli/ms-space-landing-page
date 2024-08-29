@@ -1,38 +1,83 @@
-.App {
+.signup-button {
+  background-color: #1C2458; /* Replace with your desired color */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px; /* Adjust the curvature */
+  text-align: center;
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Ensure button is not full-width */
+  font-size: 16px;
+  border: none; /* Remove default border if any */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth color transition */
+}
+
+.signup-button:hover {
+  background-color: #0056b3; /* Darker shade for hover effect */
+}
+
+/* Banner.css */
+.banner-content {
+  /* height: 100vh;  */
+  /* display: flex; */
+  /* align-items: center; */
+  background-color: #d2d5d7;
+}
+
+.text-section {
+  /* padding: 20px; */
+  background-color: #1C2458;
+  color: #faf7f7;
+  height: 89vh;
+  padding: 0;
+  margin: 0;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.image-section {
+   /* display: flex;  */
+  /* justify-content: center; */
+   /* align-items: center; */
+  background-color:  #d2d5d7;
+  padding: 0;
+  margin: 0;
+  height: 89vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.image-section img {
+  max-width: 100%;
+  
+  border-radius: 8px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.banner-container {
+  position: relative;
+  width: 100%;
+  max-height: 500px;
+  overflow: hidden;
+}
+
+.banner-content {
+  position: relative;
+}
+
+.banner-image {
+  width: 100%;
+  height: auto;
+}
+
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: white;
+  font-size: 10px;
+  /* font-weight: bold; */
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

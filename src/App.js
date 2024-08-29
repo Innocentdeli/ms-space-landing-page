@@ -1,9 +1,9 @@
-import Header from './Layouts/Header'
+import Home from './Components/Home'
 
 function App() {
   return (
     <div className="">
-      <Header />
+      <Home />
     </div>
   );
 }

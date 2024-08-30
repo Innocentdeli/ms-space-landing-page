@@ -30,7 +30,7 @@ import {
     return(
         <MDBContainer style={{backgroundColor:'#F5F5F5', borderRadius:'8px'}} className="mt-5">
             <p className="mb-3" style={{textAlign:'center', paddingTop:'20px', color:'#000', fontWeight:'bold'}}>Professionals from 7+ Countries around the globe</p>
-            <ul style={{display: !isMobile ? 'flex': 'grid',}}>
+            <ul style={{display: !isMobile ? 'flex': 'grid', gridTemplateColumns: !isMobile ?'' : 'auto auto auto'}}>
                 <li className= {!isMobile ? "country" : 'country1'}>
                     <img src={uk} alt="United States" />
                     <p>England</p>
